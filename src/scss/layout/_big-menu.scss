@@ -1,0 +1,35 @@
+.big-menu{
+    @include tablets{
+        display: none;
+      }
+}
+
+.big-menu__list{
+    padding-top: rem(50px);   
+    a{
+        font-weight: 200;
+    }
+    display: flex;   
+    align-content: space-between;
+    height: rem(170px);
+    flex-wrap: wrap;
+    list-style-type:none;
+}
+
+.big-menu__item{ 
+   flex-basis: 33%;
+   font-size: 60px;   
+   line-height: 115px;
+   font-weight: 200;
+   &::after{
+       content:"\00a0 ";
+   }   
+
+   @include desktop{
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 85px;
+  }
+}
+
+

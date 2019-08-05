@@ -1,0 +1,27 @@
+.about-company__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(170px);
+    @include tablets{
+        flex-direction: column;
+        padding-top: rem(30px);
+    } 
+}
+
+.about-company__about, .about-company__guarant{
+    width: rem(460px);
+    @include desktop{
+        width:45%;  
+    }
+
+    @include tablets{
+        width: 100%;
+    } 
+}
+
+.about-company__guarant{
+    @include tablets{
+        margin-top: rem(30px);
+    } 
+}

@@ -1,0 +1,59 @@
+.map__tabs{ 
+    .map__phone{
+        //display: none;
+        @include tablets{
+            display: block;
+        }
+    }
+    
+    justify-content: center !important;
+    height: rem(880px);  
+    overflow: hidden;
+    @include tablets{
+        //height: rem(500px); 
+        height: rem(500px);  
+        justify-content: flex-start !important;
+    }
+
+    .tabs__tab{
+        margin-right: 25px;
+        margin-left: 25px;
+        @include tablets{
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    .tabs__content{
+        text-align: center;  
+        width: 100%;
+
+       
+        @include tablets{
+            text-align: left;  
+            margin-top: rem(-30px);
+        }   
+
+        /*.map__img-wrapper{
+            width: 100%;
+            //overflow: hidden;
+            height: 630px;
+        }*/
+
+        .google__map{
+            height: rem(700px); 
+            @include tablets{
+                height: rem(346px);  
+            }
+        }
+  
+
+        /*img{            
+            height: 100%;
+            @include tablets{
+                transform: translate(-350px, -200px);          
+            }
+        } */
+        left:0;        
+        top:rem(100px);
+    }   
+}

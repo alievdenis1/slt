@@ -1,0 +1,35 @@
+.categories{
+    margin-top: rem(35px);
+    margin-bottom: rem(35px);   
+
+    span{
+        &::after{
+            font-family: 'icons';
+            font-size: 13px;
+            content: "\e901";
+            margin-left: rem(10px);
+        }
+        cursor: pointer;
+        display: inline-block;
+        border-bottom: 1px solid; 
+        line-height:30px;
+    }
+    text-align: center;
+    display: none;
+    .catigories__list{ 
+        display: none;
+        flex-direction: column;
+        justify-content: center;        
+        margin-top: rem(20px);  
+        
+        .categories__item{
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    }
+
+    @include tablets{
+        display: block;
+    }
+
+}

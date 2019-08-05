@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Контакты</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script type="text/javascript" src="./js/sly.min.js" defer></script>
+    <script type="text/javascript" src="./js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsjUY--c9nde-luye6Hw6tEo7FVJIB7FA" defer></script>
+    <script type="text/javascript" src="./js/map.js" defer></script>
+    <script type="text/javascript" src="./js/mapMoscow.js" defer>   </script>
+    <script src="https://www.google.com/recaptcha/api.js">   </script>
+  </head>
+  <body>
+    <div class="mobile-nav-menu"><a href="/">      <img src="img/logo_grey.svg" alt="логотип slt"></a>
+      <div class="mobile-nav-menu__lang"><a class="noactive_lang" href="#">EN</a><a href="#">RU    </a></div>
+      <div class="mobile-nav-menu__wrapper">           
+        <ul>
+          <li><a class="mobile-nav-menu__item0" href="/blog.html">Проекты/Блог</a></li>
+          <li><a class="mobile-nav-menu__item1" href="/docs.html">Документы</a></li>
+          <li><a class="mobile-nav-menu__item2" href="/service.html">Услуги</a></li>
+          <li><a class="mobile-nav-menu__item3" href="/contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="mobile-nav-menu__wrapper"> <a class="mobile-nav-menu__social" href="https://www.instagram.com/sound.light.technology/"><span>instagram   </span></a><a class="mobile-nav-menu__social" href="https://www.facebook.com/Group-Company-Sound-Light-Technology-SLT-1916693508593647/"><span>facebook   </span></a><a class="mobile-nav-menu__social" href="https://www.youtube.com/channel/UCzR80RQPn-sFCxbNNzLccXw"><span>youtube</span></a></div>
+    </div>
+    <div class="mobile-nav">
+      <div class="mobile-nav__favourites"><a href="/favourites.html"><span>Избранное </span></a></div>
+      <div class="mobile-nav__burger c-hamburger c-hamburger--htx"><span></span></div>
+    </div>
+    <div class="flex noise">   
+      <div class="content">
+        <header class="header">
+          <div class="container"> 
+            <div class="wrapper header__wrapper">
+              <div class="header__logo"><a href="/"><img src="img/logo_black.svg" alt="sound light technology логотип"/></a></div>
+              <div class="header__col2">
+                <div class="header__contact"><a class="header__lang noactive_lang" href="#">En</a><a class="header__lang" href="#">Ru</a><a class="header__phone" href="tel:+78622608480">+7 862 260-84-80</a><span class="header__email">sltsochi@sltsochi.ru</span></div>
+                <div class="header__favourites"><a href="/favourites.html">Избранное</a></div>
+                <nav class="header">
+                  <ul class="header__list">
+                    <li class="header__item"><a href="/blog.html">Проекты/Блог</a></li>
+                    <li class="header__item"><a href="/docs.html">Документы</a></li>
+                    <li class="header__item"><a href="/service.html">Услуги</a></li>
+                    <li class="header__item header__item_active"><a href="/contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="contacts">
+          <div class="container">  
+            <h1>Контакты   </h1>
+            <div class="wrapper contacts__wrapper"> 
+              <div class="description description__contacts">
+                <p class="tablets-none"> +7 862 260-84-80</p>
+                <p class="download"> Презентация pdf</p>
+              </div>
+            </div>
+            <div class="contacts__form">
+              <h3>Форма обратной свзяи</h3>
+              <form action="#" enctype="multipart/form-data" method="post">
+                <div class="name">
+                  <label for="name">Как вас зовут?</label>
+                  <input type="text" id="name" required>
+                </div>
+                <label for="email">Куда отправить ответ?  </label>
+                <input type="email" id="email" required>
+                <label for="message">Ваш вопрос  </label>
+                <textarea type="text" id="message"></textarea>
+                <button class="g-recaptcha" id="submit" data-sitekey="6LdC63QUAAAAAPkUrvSWlPEQUVdXSxTzOyVot8tU" data-callback="YourOnSubmitFn">Отправить</button>
+                <p>Я даю <a style="text-decoration:underline !important;" href="#">Cогласие</a> на обработку данных, в т.ч. отправку информационных сообщений </p>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="map">
+          <div class="container">
+            <div class="wrapper map__wrapper">
+              <div class="tabs map__tabs">
+                <div class="tabs__tab">
+                  <input id="map__1tab" type="radio" name="map__tabs" checked>
+                  <label for="map__1tab">Сочи</label>
+                  <div class="tabs__content">
+                    <p class="map__phone">+7 862 260-84-80</p>
+                    <p>Транспортная 74/5</p>
+                    <div class="google__map" id="map_canvas"></div>
+                  </div>
+                </div>
+                <div class="tabs__tab">
+                  <input id="map__2tab" type="radio" name="map__tabs">
+                  <label for="map__2tab">Москва</label>
+                  <div class="tabs__content">
+                    <p class="map__phone">+7 916 591-30-32</p>
+                    <p>Московская область, Одинцовский район, деревня Вырубово, прудовая 152</p>
+                    <div class="google__map" id="map_canvas_moscow"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="wrapper footer__wrapper">
+            <div class="footer_col1">
+              <p>© 2010–2018 Sound Light Technologies</p>
+            </div>
+            <div class="footer_col2"><a href="https://www.instagram.com/sound.light.technology/"><span>instagram</span></a><a href="https://www.facebook.com/Group-Company-Sound-Light-Technology-SLT-1916693508593647/"><span>facebook</span></a><a href="https://www.youtube.com/channel/UCzR80RQPn-sFCxbNNzLccXw"><span>youtube</span></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

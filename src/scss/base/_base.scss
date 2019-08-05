@@ -1,0 +1,174 @@
+html{
+  font-size: 14px;
+  line-height: 24px;
+  @include desktop{
+    font-size: 12.5px;;
+  }
+  @include tablets{
+    line-height: 20px;
+  }
+}
+
+.gm-style-pbc{
+  font-family: 'IBM Plex Mono', monospace !important;
+}
+
+
+h1, h2, h3, h4, h5{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1{
+  margin-bottom: rem(40px);
+}
+
+h1, h2{
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 60px;
+  @include desktop{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  @include tablets{
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 20px;
+  }  
+}
+
+h3{
+  font-weight: normal;
+  line-height: 42px;
+  font-size: 30px;  
+  @include desktop{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  @include tablets{
+    font-weight: 400;
+    line-height: 42px;
+    font-size: 29px;
+  }  
+}
+
+
+ul{
+  font-size : 0;
+  padding: 0;
+}
+
+li{
+  font-size : 14px;
+  @include desktop{
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+.flex{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+}
+
+.container {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-direction: column;
+  @include desktop{
+    max-width: 840px;
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+  }
+
+  @include tablets{
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
+
+}
+
+.wrapper {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.container{
+  flex-shrink: 0;
+}
+
+
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tablets-none{
+  @include tablets{
+    display: none;
+  }
+}
+
+img{
+  flex-shrink: 0;
+}
+
+
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+
+.jGrowl.top-right {
+    left:35% !important; 
+    top:35% !important;
+}
+#jGrowl .jGrowl-notification {
+    position: relative;
+     text-align:center;
+    background: none repeat 0 0 #fff !important;
+}
+#jGrowl .jGrowl-notification .jGrowl-close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    color: black !important;
+}
+#jGrowl .jGrowl-notification .jGrowl-message {
+    color:black!important;
+}

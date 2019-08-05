@@ -1,0 +1,38 @@
+.instagram__wrapper{
+    padding-bottom: rem(235px);
+    text-align: center;
+    @include desktop{        
+        padding-bottom: rem(135px);
+    } 
+    @include tablets{
+        padding-bottom: rem(45px);
+    } 
+}
+
+.instagram__lenta{
+    width: 100%;
+    //overflow: hidden;
+    overflow-x: scroll;
+    display: flex;   
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar { width: 0 !important };
+}
+
+.instagram__imgs{
+    display: flex; 
+    //position: absolute;   
+
+    img{
+        height: rem(190px);
+        margin-left: rem(10px);
+        @include tablets{
+            height: rem(130px);
+          }  
+    }
+    // margin-left:-110px;
+}
+
+.instagram__h3{
+    margin-bottom: rem(50px);
+}
