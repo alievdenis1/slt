@@ -1,2 +1,1 @@
-# slt
-website for sound light technology
+Front end web site for sound light technology
